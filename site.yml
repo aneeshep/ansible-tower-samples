@@ -1,7 +1,9 @@
 - name: Deploy UnderCloud and OverCloud
   hosts: all
   roles:
-    - launch-nodes node_type=undercloud
+    - launch-nodes 
+      node_type: undercloud
+
     - prepare-undercloud
   tasks:
     - name: Hello Message
