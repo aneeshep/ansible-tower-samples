@@ -1,5 +1,7 @@
 ---
-# tasks file for launch-nodes
+# tasks file for launch-node(s)
 
 - name: Launching nodes
   debug: msg="Launching {{node_type}} node"
+- name: Rebooting node
+  command: sleep 10

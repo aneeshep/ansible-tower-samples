@@ -1,5 +1,6 @@
 - name: Deploy UnderCloud and OverCloud
   hosts: all
+  gather_facts: false
   roles:
     - { role: launch-nodes, node_type: undercloud }
     - prepare-undercloud
