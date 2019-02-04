@@ -1,0 +1,15 @@
+- name: Checking Undercloud  Processor Requirements
+  debug: msg=' Status=OK. Found 8-thread 64-bit x86 processor with support for the Intel 64'
+
+- name: Checking Undercloud  RAM Requirements
+  debug: msg="Status=OK. Found 48 GB of RAM"
+
+- name: Checking undercloud capasity
+  debug: msg="Found CPU thread = 16. Setting Openstack Service workers = 8"
+
+- name: Checking Undercloud Storage Requirements
+  debug: msg="Status=OK. Found 200GB disk space"
+
+- name: Cheking Undercloud Repo settings
+
+  

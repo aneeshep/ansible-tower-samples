@@ -1,0 +1,5 @@
+---
+# tasks file for launch-nodes
+
+- name: Launching nodes
+  debug: msg="Launching {{node_type}} node"
