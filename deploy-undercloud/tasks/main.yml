@@ -1,2 +1,36 @@
 ---
 # tasks file for deploy-undercloud
+- name: Install python-tripleoclient
+  command: sleep 10
+
+- name: Preparing container images
+  command: sleep 10
+
+- name: Modifying images
+  command: sleep 10
+
+- name: Update package on container images
+  command: sleep 10
+
+- name: Preparing a Satellite server for container images
+  command: sleep 10
+
+- name: Preparing undercloud config
+  command: sleep 10
+
+- name: Installing undercloud director
+  command: sleep 20
+
+- name: Verifying undercloud director
+  command: sleep 10
+
+- name: Preparing images for overcloud nodes
+  command: sleep 10
+
+- name: Verifying uploaded images
+  command: sleep 10
+
+- name: Setting a nameserver for the control plane
+  command: sleep 10
+
+- debug: msg="UnderCloud deployment Success"

@@ -4,5 +4,6 @@
   roles:
     - { role: launch-nodes, node_type: undercloud }
     - prepare-undercloud
+    - deploy-undercloud
 
 
