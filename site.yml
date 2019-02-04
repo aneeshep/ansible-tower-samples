@@ -1,5 +1,7 @@
-- name: UnderCloud and OverCloud
+- name: Deploy UnderCloud and OverCloud
   hosts: all
+  roles:
+    - prepare-undercloud
   tasks:
     - name: Hello Message
       debug:
