@@ -4,8 +4,5 @@
   roles:
     - { role: launch-nodes, node_type: undercloud }
     - prepare-undercloud
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+
 

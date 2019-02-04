@@ -2,3 +2,4 @@
 # tasks file for prepare-undercloud
 - include: prepare_networks.yml
 - include: prepare_environment.yml
+- include: prepare_undercloud_node.yml

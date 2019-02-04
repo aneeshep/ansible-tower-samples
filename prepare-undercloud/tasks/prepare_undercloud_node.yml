@@ -1,0 +1,27 @@
+- name: Creating stack user
+  command: sleep 10
+
+- name: Configuring sudo for stack user
+  command: sleep 10
+
+- name: Creating required directories
+  command: sleep 10
+
+- name: Configuring hostname
+  command: sleep 15
+
+- name: Configuring required repos
+  command: sleep 15
+
+- name: Cheking Undercloud Repo settings
+  debug: msg="Status=OK. {{item }} "
+  with_items:
+    - "Core repositories"
+    - "Ceph repositories"
+
+- name: Updating package
+  command: sleep 20
+
+- name: Rebooting node
+  command: sleep 10
+  

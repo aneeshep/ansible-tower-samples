@@ -10,10 +10,6 @@
 - name: Checking Undercloud Storage Requirements
   debug: msg="Status=OK. Found 200GB disk space"
 
-- name: Cheking Undercloud Repo settings
-  debug: msg="Status=OK. {{item }} "
-  with_items:
-    - "Core repositories"
-    - "Ceph repositories"
+
 
   
